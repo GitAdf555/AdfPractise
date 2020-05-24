@@ -1,0 +1,24 @@
+{
+	"name": "ParamOnPremSql",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"parameters": {
+			"OnPremSqlServer": {
+				"type": "string"
+			},
+			"OnPremSqlDBName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=@{linkedService().OnPremSqlServer};initial catalog=@{linkedService().OnPremSqlDBName};user id=sa",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJmZTg3ZDU2Ny0wZWIxLTQ4ZTQtOGE4Ny05ZGM1NTRlNGQ4OWQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "SqlSelfHosted",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
