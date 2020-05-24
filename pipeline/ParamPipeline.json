@@ -2,6 +2,14 @@
 	"name": "ParamPipeline",
 	"properties": {
 		"description": "ExportOnPerSqltabletoBlobStorage",
+		"parameters": {
+			"OnPremServer": {
+				"type": "string"
+			},
+			"SqlDBName": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
