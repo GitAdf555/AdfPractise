@@ -1,0 +1,7 @@
+{
+	"name": "ParamPipeline",
+	"properties": {
+		"description": "ExportOnPerSqltabletoBlobStorage",
+		"annotations": []
+	}
+}
