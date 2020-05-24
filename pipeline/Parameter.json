@@ -1,0 +1,7 @@
+{
+	"name": "Parameter",
+	"properties": {
+		"description": "Exportmultiple tables in to flat files from onprim to Azureblob through parameters",
+		"annotations": []
+	}
+}
