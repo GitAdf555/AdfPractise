@@ -1,0 +1,16 @@
+{
+	"name": "OnPremDynamictableconnection",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=DESKTOP-ERPP7O7;initial catalog=Practise;user id=sa",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJjNjk1MTRmYS04ZTVmLTQxYTEtOGI0OC05Yzg4YTIzYjhjMDMiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "SqlSelfHosted",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
