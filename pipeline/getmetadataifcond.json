@@ -44,7 +44,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"expression": {
-						"value": "@equals(\nformatDateTime(utcnow(),'yyyy-MM-dd'),\nformatDateTime( activity('Get Metadata1').output,'yyyy-MM-dd'))",
+						"value": "@equals(\nformatDateTime(utcnow(),'yyyy-MM-dd'),\nformatDateTime( activity('Get Metadata1').output.lastmodified,'yyyy-MM-dd'))",
 						"type": "Expression"
 					},
 					"ifTrueActivities": [
